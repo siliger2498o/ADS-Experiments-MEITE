@@ -472,27 +472,27 @@ public class BST_Swing extends javax.swing.JFrame {
             tf_Salary.setText("");                               
     }
     private void bt_BrowseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_BrowseActionPerformed
-        try {
-            this.file= new FileReader("C:\\Users\\sushma r iliger\\Desktop\\ME ITE Folder\\ADS Expt\\Expt1 BST\\file.json");
-            lb_FilePath.setText(this.file.toString());                 
-            readJsonFile(this.file);
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(BST_Swing.class.getName()).log(Level.SEVERE, null, ex);
-        }
-//        JFileChooser j = new JFileChooser();
-//          int r=j.showOpenDialog(null);                                                             
-//            try {            
-//                if (r == JFileChooser.APPROVE_OPTION)
-//            {
-//                this.file= new FileReader(j.getSelectedFile().getAbsolutePath());
-//                lb_FilePath.setText(j.getSelectedFile().getAbsolutePath());                 
-//                readJsonFile(this.file);
-//            }             
-//            else
-//            {
-//                lb_FilePath.setText("The user cancelled the operation"); 
-//            } 
-//            }catch(Exception e){}              
+//        try {
+//            this.file= new FileReader("ur path");
+//            lb_FilePath.setText(this.file.toString());                 
+//            readJsonFile(this.file);
+//        } catch (FileNotFoundException ex) {
+//            Logger.getLogger(BST_Swing.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+        JFileChooser j = new JFileChooser();
+          int r=j.showOpenDialog(null);                                                             
+            try {            
+                if (r == JFileChooser.APPROVE_OPTION)
+            {
+                this.file= new FileReader(j.getSelectedFile().getAbsolutePath());
+                lb_FilePath.setText(j.getSelectedFile().getAbsolutePath());                 
+                readJsonFile(this.file);
+            }             
+            else
+            {
+                lb_FilePath.setText("The user cancelled the operation"); 
+            } 
+            }catch(Exception e){}              
     }//GEN-LAST:event_bt_BrowseActionPerformed
 
     private void bt_DeleteNodeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_DeleteNodeActionPerformed
