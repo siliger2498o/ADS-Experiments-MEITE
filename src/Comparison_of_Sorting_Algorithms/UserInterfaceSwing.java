@@ -268,14 +268,14 @@ public class UserInterfaceSwing extends javax.swing.JFrame {
     }//GEN-LAST:event_bt_QuickSortActionPerformed
 
     private void bt_SelectionSort1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_SelectionSort1ActionPerformed
-             Instant start = Instant.now();
-             Sorting_Algorithms sorting=new Sorting_Algorithms();
-             int sortedArray[]=sorting.selectionSort(array);
-             Instant end = Instant.now();
-             Duration timeElapsed = Duration.between(start, end);
-             System.out.println("Time taken: "+ timeElapsed.toMillis() +" milliseconds");            
-             showResultArray(sortedArray);             
-                     
+        Instant start = Instant.now();
+        Sorting_Algorithms sorting=new Sorting_Algorithms();
+        int sortedArray[]=sorting.selectionSort(array);
+        Instant end = Instant.now();
+        Duration timeElapsed = Duration.between(start, end);
+        System.out.println("Time taken: "+ timeElapsed.toMillis() +" milliseconds");
+        showResultArray(sortedArray);
+
     }//GEN-LAST:event_bt_SelectionSort1ActionPerformed
 
     public static void main(String args[]) {        
